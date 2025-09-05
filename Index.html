@@ -151,7 +151,6 @@
         <button class="part-btn" data-part="engine">Engine</button>
         <button class="part-btn" data-part="tires">Tires</button>
         <button class="part-btn" data-part="body">Body</button>
-        <button class="part-btn" data-part="interior">Interior</button>
     </div>
     
     <div class="info-panel" id="infoPanel">
@@ -185,7 +184,7 @@
         // SCENE SETUP
         const scene = new THREE.Scene();
         const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
-        camera.position.set(25, 10, 50); // Good starting camera position for a car
+        camera.position.set(25, 15, 50); // Good starting camera position for a car
 
         const renderer = new THREE.WebGLRenderer({
             antialias: true
@@ -306,7 +305,7 @@
         // PART VIEWS AND DESCRIPTIONS
         const partInfo = {
             overview: {
-                position: new THREE.Vector3(25, 10, 50),
+                position: new THREE.Vector3(25, 15, 50),
                 target: new THREE.Vector3(0, 0.5, 0),
                 title: "Dodge Challenger SRT Demon 170",
                 content: "The Dodge Challenger SRT Demon 170 is the most powerful production car ever made, with a 6.2L supercharged HEMI V8 engine producing 1,025 horsepower. It can accelerate from 0 to 60 mph in just 1.66 seconds and complete the quarter mile in 8.91 seconds at 151 mph."
